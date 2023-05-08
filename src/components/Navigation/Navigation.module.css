@@ -1,0 +1,17 @@
+.container {
+    width: 1440px;
+    height: 78px;
+    background: #403C3B;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item {
+    color: white;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    text-decoration: none;
+}
