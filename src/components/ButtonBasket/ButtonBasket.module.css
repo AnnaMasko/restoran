@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 149px;
+    height: 52px;
+    background-color: #618967;
+    align-items: center;
+    border-radius: 10px;
+
+
+}
+
+.textButton {
+    font-family: 'Roboto', "sans serif";
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffff;
+
+}
+
+.containerCircle {
+    width: 50px;
+    border-left: 1px solid #ffff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

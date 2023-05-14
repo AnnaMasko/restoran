@@ -1,0 +1,45 @@
+.cartButton {
+    width: 137px;
+    height: 44px;
+    background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.count{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #79b382;
+        text-align: center;
+        line-height: 50px;
+        font-family: Gilroy-Bold;
+        font-size: 20px;
+        color: #fff;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+}
+.cardPrice {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+
+}
+.buttonCount{
+    width: 62px;
+    height: 44px;
+    background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+    color: white;
+    border-radius: 10px;
+    border: none;
+}

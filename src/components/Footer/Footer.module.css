@@ -1,0 +1,27 @@
+@import "../../assets/fonts/fonts.css";
+
+.footer {
+    display: flex;
+   
+    justify-content: center;
+    width: 1440px;
+    height: 195px;
+    background: linear-gradient(270.7deg, #44403F 0.4%, #211F20 100%);
+    color: white;
+    
+
+}
+
+.containerContent {
+    padding: 26px 159px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 208px;
+    height: 140px;
+    font-family: Gilroy;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+}

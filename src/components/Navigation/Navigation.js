@@ -1,17 +1,15 @@
 import {Link} from "react-router-dom"
 import styles from './Navigation.module.css'
+import { menu } from "../../data/menu"
 
 export const Navigation = () =>{
     return(
         <nav className={styles.container}>
-            <Link className={styles.item} to ='/ColdSnacks'>Холодные закуски</Link>
-            <Link className={styles.item} to ='/HotSnacks'>Горячие закуски</Link>
-            <Link className={styles.item} to ='/MeatDishes'>Мясные блюда</Link>
-            <Link className={styles.item} to ='/Soup'>Супы</Link>
-            <Link className={styles.item} to ='/FishDishes'>Рыбныеблюда</Link>
-            <Link className={styles.item} to ='/GrillMenu'>Гриль меню</Link>
-            <Link className={styles.item} to ='/Specialties'>Фирменные блюда</Link>
-            <Link className={styles.item} to ='/Drinks'>Напитки</Link>
+
+            {
+                menu.map(element => <Link key= {element.id} className={styles.item} to ={element.url}>{element.title}</Link>)
+            }
+
 
         </nav>
     )

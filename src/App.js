@@ -3,32 +3,34 @@ import { Banner } from './components/Banner/Banner';
 import { Header } from './components/Header/Header';
 import { Navigation } from './components/Navigation/Navigation';
 import { ColdSnacks } from './components/ColdSnacks/ColdSnacks';
-import { Route, Routes } from 'react-router-dom';
-import { MeatDishes } from './components/MeatDishes/MeatDishes';
-import {Soup} from './components/Soup/Soup'
-import { FishDishes } from './components/FishDishes/FishDishes';
-import { GrillMenu } from './components/GrillMenu/GrillMenu';
-import { Drinks } from './components/Drinks/Drinks';
-import { Specialties } from './components/Specialties/Specialties';
-import { HotSnacks } from './components/HotSnacks/HotSnacks';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import { Basket } from './components/Basket/Basket';
+import { Footer } from './components/Footer/Footer';
+import { About } from './components/Pages/About/About';
+import { Delivery } from './components/Pages/Delivery/Delivery';
+import { Refund } from './components/Pages/Refund/Refund';
+import {Sale} from './components/Pages/Sale/Sale'
+
+
 
 const App = () => {
+  let { state } = useLocation();
   return (
     <div className={styles.app}>
       <Header />
-      <Banner />
+      {!state && <Banner />}
       <Navigation />
 
       <Routes>
-        <Route path='/ColdSnacks' element={<ColdSnacks />} />
-        <Route path='/HotSnacks' element={<HotSnacks />} />
-        <Route path='/MeatDishes' element={<MeatDishes/>} />
-        <Route path='/Soup' element={<Soup/>} />
-        <Route path='/FishDishes' element={<FishDishes />} />        
-        <Route path='/GrillMenu' element={<GrillMenu />} />
-        <Route path='/Specialties' element={<Specialties />} />
-        <Route path='/Drinks' element={<Drinks />} />
+        <Route path='/' element={<ColdSnacks />} />
+        <Route path='/:url' element={<ColdSnacks />} />
+        <Route path='/basket' element={<Basket />} /> 
+        <Route path='/about' element={<About />} /> 
+        <Route path='/delivery' element={<Delivery/>}/>  
+        <Route path='/refund' element={<Refund/>}/>   
+        <Route path='/sale' element={<Sale/>}/>   
       </Routes>
+      <Footer />
 
     </div>
   );
