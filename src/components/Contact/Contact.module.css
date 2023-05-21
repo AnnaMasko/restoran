@@ -42,3 +42,9 @@
     font-weight: 700;
     color: #CFCFCF;
 }
+
+@media (max-width: 912px) {
+	.container {
+        display: none;
+	}
+}

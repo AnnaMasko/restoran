@@ -1,7 +1,6 @@
 .container{
     display: flex;
     position: relative;
-
 }
 
 .input{
@@ -22,3 +21,9 @@
     top: 14px;
     right: 30px;
 }
+@media (max-width: 540px) {
+	.input {
+        max-width: 450px;
+    }
+}
+

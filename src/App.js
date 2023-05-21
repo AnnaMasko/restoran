@@ -9,29 +9,48 @@ import { Footer } from './components/Footer/Footer';
 import { About } from './components/Pages/About/About';
 import { Delivery } from './components/Pages/Delivery/Delivery';
 import { Refund } from './components/Pages/Refund/Refund';
-import {Sale} from './components/Pages/Sale/Sale'
+import { Sale } from './components/Pages/Sale/Sale'
+import { useState, useEffect } from 'react';
+
 
 
 
 const App = () => {
   let { state } = useLocation();
+  const [showMenu, setShowMenu] = useState(false);
+  const [weather, setWeather] = useState({});
+
+  useEffect(() => {
+    fetch("https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current_weather=true&hourly=temperature_2m,relativehumidity_2m,windspeed_10m")
+      .then(response => response.json())
+      .then((data) => {
+        const dataWeather = {
+          city: "Minsk",
+          temperature: data.current_weather.temperature,
+          units: data.hourly_units.temperature_2m,
+          time: data.current_weather.time,
+        }
+        setWeather(dataWeather);
+        //console.log(dataWeather)
+      });
+  }, [])
+
   return (
     <div className={styles.app}>
-      <Header />
+
+      <Header showMenu={showMenu} setShowMenu={setShowMenu} />
       {!state && <Banner />}
       <Navigation />
-
       <Routes>
         <Route path='/' element={<ColdSnacks />} />
         <Route path='/:url' element={<ColdSnacks />} />
-        <Route path='/basket' element={<Basket />} /> 
-        <Route path='/about' element={<About />} /> 
-        <Route path='/delivery' element={<Delivery/>}/>  
-        <Route path='/refund' element={<Refund/>}/>   
-        <Route path='/sale' element={<Sale/>}/>   
+        <Route path='/basket' element={<Basket />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/delivery' element={<Delivery />} />
+        <Route path='/refund' element={<Refund />} />
+        <Route path='/sale' element={<Sale />} />
       </Routes>
-      <Footer />
-
+      <Footer showMenu={showMenu} setShowMenu={setShowMenu} weather={weather} />
     </div>
   );
 }

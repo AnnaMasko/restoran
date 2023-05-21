@@ -2,14 +2,11 @@
 
 .footer {
     display: flex;
-   
     justify-content: center;
     width: 1440px;
     height: 195px;
     background: linear-gradient(270.7deg, #44403F 0.4%, #211F20 100%);
     color: white;
-    
-
 }
 
 .containerContent {
@@ -24,4 +21,52 @@
     font-weight: 500;
     line-height: 14px;
     letter-spacing: 0em;
+}
+
+@media (max-width: 1280px) {
+	.footer {
+        max-width: 1280px;
+        justify-content: left;
+	}
+}
+
+@media (max-width: 1024px) {
+	.footer {
+        max-width: 1024px;
+	}
+    .containerContent{
+        width: 145px;
+    }
+}
+
+@media (max-width: 912px) {
+	.footer {
+        max-width: 912px;
+	}
+}
+
+@media (max-width: 800px) {
+	.footer {
+        max-width: 800px;
+	}
+    .containerContent {
+        padding: 0;
+        margin-left: 100px;
+    }
+}
+@media (max-width: 700px) {
+	.footer {
+        max-width: 700px;
+	}
+}
+@media (max-width: 540px) {
+	.footer {
+        max-width: 540px;
+        align-items: center;
+	}
+    .containerContent {
+        padding: 0;
+        margin-left: 100px;
+        width: 150px;
+    }
 }

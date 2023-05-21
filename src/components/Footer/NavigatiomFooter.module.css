@@ -5,7 +5,6 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
     align-items: center;
-    
 }
 
 .navigation a {
@@ -16,4 +15,28 @@
 	text-decoration: none;
 	color: #fff;
     padding-left: 40px;
+}
+
+
+@media (max-width: 1024px) {
+	.navigation{
+		display: none;
+	}
+	.navHeader{
+        display: flex;
+        position: absolute;
+		width: 950px;
+        top: 8px;
+        background: #403C3B;
+        padding: 30px;
+		left: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+	.navHeader{
+        flex-direction: column;
+		width: 400px;
+        
+    }
 }

@@ -36,3 +36,15 @@
     justify-content: center;
 
 }
+
+@media (max-width: 800px) {
+	.circle{
+        display: none;
+    }
+    .containerCircle{
+        display: none;
+    }
+    .container{
+        order: -1;
+    }
+}

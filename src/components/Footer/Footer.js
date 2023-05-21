@@ -1,9 +1,9 @@
 import { Logo } from '../Logo/Logo'
 import styles from './Footer.module.css'
 import { NavigationFooter } from './NavigationFooter'
+import { Weather } from './Weather'
 
-
-export const Footer = () => {
+export const Footer = ({weather, showMenu, setShowMenu}) => {
     return (
         <div className={styles.footer}>
             
@@ -13,10 +13,9 @@ export const Footer = () => {
             <span>Пользовательское соглашение</span>
             <span>Карта сайта</span>
             <span>Политика конфиденциальности</span>
+        </div> 
+        <NavigationFooter showMenu={showMenu} setShowMenu={setShowMenu}/>
+        <Weather weather={weather}/>
         </div>
-        <NavigationFooter/>
-        </div>
-
     )
-
 }
