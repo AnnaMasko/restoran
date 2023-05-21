@@ -1,23 +1,27 @@
 import { useState } from "react";
 import styles from '../ColdSnacks/Order.module.css'
 import buy from '../../assets/images/buy.png'
+import { DECREASE_PRICE, INCREASE_PRICE } from "../../reducer/types";
 
-export function Order({elementPrice}) {
-    const [count, setCount] = useState(0);
+export function Order({elementPrice, dispatch, category, id, cartCount}) {
+    //const [count, setCount] = useState(0);
     const [isShowCount, setShowCount] = useState(false);
-    const [price, setPrice] = useState(elementPrice);
+    //const [price, setPrice] = useState(elementPrice);
 
-    const addBasket = () => {
-        setCount(count + 1)
-        setPrice(price+elementPrice)
+    const addBasket = ({currentTarget}) => {
+        //console.log(currentTarget);
+        //setCount(count + 1)
+        //setPrice(price+elementPrice)
+        dispatch({type: INCREASE_PRICE, id: currentTarget.id, category: category })
     }
 
-    const removeBasket = () => {
-        if (count === 1) {
+    const removeBasket = ({currentTarget}) => {
+        if (cartCount === 1) {
             setShowCount(!isShowCount)
         }
-        setCount(count - 1)
-        setPrice(price-elementPrice)
+        //setCount(count - 1)
+        //setPrice(price-elementPrice)
+        dispatch({type: DECREASE_PRICE, id: currentTarget.id, category: category })
     }
 
     const toCart = () => {
@@ -27,12 +31,20 @@ export function Order({elementPrice}) {
     if (isShowCount) {
         return (
             <>
-                <span className={styles.count}>{count}</span>
-                <button className={styles.buttonCount} onClick={removeBasket}>
+                <span className={styles.count}>{cartCount}</span>
+                <button 
+                className={styles.buttonCount} 
+                onClick={removeBasket}
+                id = {id}
+                >
                     -
                 </button>
-                <p className={styles.cardPrice}>{price}</p>
-                <button className={styles.buttonCount} onClick={addBasket}>
+                <p className={styles.cardPrice}>{elementPrice}</p>
+                <button 
+                className={styles.buttonCount} 
+                onClick={addBasket}
+                id = {id}
+                >
                     +
                 </button>
             </>
