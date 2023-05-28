@@ -1,0 +1,165 @@
+@import "../../assets/fonts/fonts.css";
+
+.title {
+    padding: 0 20px;
+    color: black;
+    font-family: Gilroy;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.formTitle {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.formContainer {
+    display: flex;
+    width: 800px;
+   
+    margin-top: 22px;
+    align-self: center;
+    flex-direction: column;
+    padding: 30px;
+    background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+    border-radius: 10px;
+}
+
+.formContent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.formTitle {
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+}
+
+.formInput {
+    width: 100px;
+    padding: 20px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    flex: 1;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+
+}
+
+.choiceBox {
+    display: flex;
+    border-radius: 10px;
+}
+
+.choiceButton {
+    height: 60px;
+    width: 180px;
+    border: 1px solid #72a479;
+    border-right: 1px solid #72a479;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+
+.choiceBox div {
+    width: 100%;
+    display: flex;
+}
+
+.choiceBox input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.choiceBox input:checked+label {
+    background-image: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
+}
+
+.choiceLeft {
+    border-radius: 10px 0 0 10px;
+}
+
+.choiceRight {
+    border-radius: 0 10px 10px 0;
+}
+
+.deliveryTime {
+    display: flex;
+    margin: 10px;
+}
+
+.iconClock {
+    width: 16px;
+    height: 16px;
+}
+
+.contentBox{
+    display: flex;
+    width: 600px;
+}
+
+.AddBlock{
+    height: 60px;
+	width: 170px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	font-size: 16px;
+	line-height: 19px;
+	background-color: transparent;
+}
+.callBox {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.callItem {
+	display: flex;
+	gap: 10px;
+	font-family: Gilroy-Medium;
+	font-size: 13px;
+	line-height: 15px;
+	color: #fff;
+}
+
+.formAgreement {
+	flex-wrap: nowrap;
+}
+.agreement {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+.executeButton {
+	min-width: 210px;
+	padding: 20px 0;
+	border: none;
+	border-radius: 10px;
+	font-family: Gilroy-Bold;
+	font-size: 14px;
+	line-height: 17px;
+	background-image: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
+	color: #fff;
+	cursor: pointer;
+}

@@ -1,8 +1,48 @@
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    width: 1490px;
+    width: 1440px;
     height: 400px;
-    background-color: #618967;
+    background: linear-gradient(360deg, #211F20 0%, #44403F 100%);
     align-items: center;
+}
+
+.orderContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 763px;
+    height: 105px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+}
+
+.price {
+    color: white;
+    font-family: Gilroy;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.totalPrice {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+}
+
+.checkout {
+    padding: 17px 50px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
 }

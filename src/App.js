@@ -9,8 +9,9 @@ import { Footer } from './components/Footer/Footer';
 import { About } from './components/Pages/About/About';
 import { Delivery } from './components/Pages/Delivery/Delivery';
 import { Refund } from './components/Pages/Refund/Refund';
-import { Sale } from './components/Pages/Sale/Sale'
+import { Sale } from './components/Pages/Sale/Sale';
 import { useState, useEffect } from 'react';
+import { DeliveryPage } from './components/DeliveryPage/DeliveryPage';
 
 
 
@@ -49,6 +50,7 @@ const App = () => {
         <Route path='/delivery' element={<Delivery />} />
         <Route path='/refund' element={<Refund />} />
         <Route path='/sale' element={<Sale />} />
+        <Route path='/order' element={<DeliveryPage/>} />
       </Routes>
       <Footer showMenu={showMenu} setShowMenu={setShowMenu} weather={weather} />
     </div>
