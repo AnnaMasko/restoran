@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from '../ColdSnacks/Order.module.css'
 import buy from '../../assets/images/buy.png'
 import { DECREASE_PRICE, INCREASE_PRICE } from "../../reducer/types";
+import { Button } from "../../common/Button/Button";
 
 export function Order({elementPrice, dispatch, category, id, cartCount}) {
     //const [count, setCount] = useState(0);
@@ -32,31 +33,32 @@ export function Order({elementPrice, dispatch, category, id, cartCount}) {
         return (
             <>
                 <span className={styles.count}>{cartCount}</span>
-                <button 
-                className={styles.buttonCount} 
-                onClick={removeBasket}
+                <Button
+                addStyles={styles.buttonCount}
+                handleClick={removeBasket}
                 id = {id}
-                >
-                    -
-                </button>
+                title='-'
+                />
+                
                 <p className={styles.cardPrice}>{elementPrice}</p>
-                <button 
-                className={styles.buttonCount} 
-                onClick={addBasket}
+                <Button
+                addStyles={styles.buttonCount}
+                handleClick={addBasket}
                 id = {id}
-                >
-                    +
-                </button>
+                title='+'
+                />
             </>
         )
     }
     return (
         <>
             <p className={styles.cardPrice}>{elementPrice}</p>
-            <button className={styles.cartButton} onClick={toCart}>
-                В корзину
-                <img src={buy}/>
-            </button>
+            <Button
+                addStyles={styles.cartButton}
+                handleClick={toCart}
+                title='В корзину'
+                image={buy}
+                />
         </>
 
     )

@@ -1,8 +1,12 @@
 @import "../../../assets/fonts/fonts.css";
 
+.container{
+	width: 1440px;
+	background: linear-gradient(360deg, #211F20 0%, #44403F 100%);
+}
 .title {
 	padding: 0 20px;
-	color: black;
+	color: white;
 	font-family: Gilroy;
     font-weight: 700;
 	font-size: 32px;

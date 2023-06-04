@@ -12,6 +12,7 @@ import { Refund } from './components/Pages/Refund/Refund';
 import { Sale } from './components/Pages/Sale/Sale';
 import { useState, useEffect } from 'react';
 import { DeliveryPage } from './components/DeliveryPage/DeliveryPage';
+import { Preloader } from './common/Preloader/Preloader';
 
 
 
@@ -20,9 +21,12 @@ const App = () => {
   let { state } = useLocation();
   const [showMenu, setShowMenu] = useState(false);
   const [weather, setWeather] = useState({});
+  const [isPreloader, setPreloader] = useState(false)
 
   useEffect(() => {
-    fetch("https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current_weather=true&hourly=temperature_2m,relativehumidity_2m,windspeed_10m")
+    setPreloader(true)
+    setTimeout(()=>{
+      fetch("https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current_weather=true&hourly=temperature_2m,relativehumidity_2m,windspeed_10m")
       .then(response => response.json())
       .then((data) => {
         const dataWeather = {
@@ -33,27 +37,34 @@ const App = () => {
         }
         setWeather(dataWeather);
         //console.log(dataWeather)
-      });
-  }, [])
+      })
+      .finally(() => setPreloader(false))
+  }, 5000)
+    }
+    , [])
 
   return (
     <div className={styles.app}>
-
-      <Header showMenu={showMenu} setShowMenu={setShowMenu} />
-      {!state && <Banner />}
-      <Navigation />
-      <Routes>
-        <Route path='/' element={<ColdSnacks />} />
-        <Route path='/:url' element={<ColdSnacks />} />
-        <Route path='/basket' element={<Basket />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/delivery' element={<Delivery />} />
-        <Route path='/refund' element={<Refund />} />
-        <Route path='/sale' element={<Sale />} />
-        <Route path='/order' element={<DeliveryPage/>} />
-      </Routes>
-      <Footer showMenu={showMenu} setShowMenu={setShowMenu} weather={weather} />
-    </div>
+      {isPreloader ? <Preloader /> :
+        <>
+          <Header showMenu={showMenu} setShowMenu={setShowMenu} />
+          {!state && <Banner />}
+          <Navigation />
+          <Routes>
+            <Route path='/' element={<ColdSnacks />} />
+            <Route path='/:url' element={<ColdSnacks />} />
+            <Route path='/basket' element={<Basket />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/delivery' element={<Delivery />} />
+            <Route path='/refund' element={<Refund />} />
+            <Route path='/sale' element={<Sale />} />
+            <Route path='/order' element={<DeliveryPage />} />
+          </Routes>
+          <Footer showMenu={showMenu} setShowMenu={setShowMenu} weather={weather} />
+          </>
+  }
+        </div>
+    
   );
 }
 

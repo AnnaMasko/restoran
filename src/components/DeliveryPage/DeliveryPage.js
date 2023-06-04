@@ -1,8 +1,9 @@
 import styles from './DeliveryPages.module.css'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { DeliveryComponent } from './OrderComponent'
 import clock from '../../assets/images/clock.png'
 import { Link } from 'react-router-dom';
+import { useValidate } from '../useValidate';
 
 
 const initialState = {
@@ -26,13 +27,26 @@ const initialState = {
 export function DeliveryPage() {
 	const [state, setState] = useState(initialState);
 	const [isDisabled, setIsDisabled] = useState(true);
+	const { error, validate } = useValidate();
+
+	useEffect(() => {
+		const disable =
+			Object.values(error).find((element) => element !== "") ||
+			state.name === "" ||
+			state.phone === "" ||
+			state.street === "" ||
+			state.house === "" ||
+			state.agreement === false;
+		setIsDisabled(disable);
+	}, [error, state.name, state.phone, state.street, state.house, state.agreement,
+	]);
 
 
 	function handleChange({ target }) {
-		const { name, value, type, checked } = target;		
+		const { name, value, type, checked } = target;
 		const stateValue = type === "checkbox" ? checked : value;
 		setState({ ...state, [name]: stateValue });
-
+		validate(name, value)
 	}
 
 	return (
@@ -50,6 +64,7 @@ export function DeliveryPage() {
 							placeholder="Имя*"
 							onChange={handleChange}
 						></input>
+						<span style={{ color: 'red' }}>{error.name}</span>
 						<input
 							className={styles.formInput}
 							type="phone"
@@ -58,6 +73,7 @@ export function DeliveryPage() {
 							placeholder="Телефон*"
 							onChange={handleChange}
 						></input>
+						<span style={{ color: 'red' }}>{error.phone}</span>
 					</div>
 				</DeliveryComponent>
 
@@ -113,6 +129,7 @@ export function DeliveryPage() {
 								placeholder="Укажите улицу*"
 								onChange={handleChange}
 							></input>
+							<span style={{ color: 'red' }}>{error.street}</span>
 							<input
 								className={styles.formInput}
 								type="text"
@@ -121,6 +138,7 @@ export function DeliveryPage() {
 								placeholder="Номер дома*"
 								onChange={handleChange}
 							></input>
+							<span style={{ color: 'red' }}>{error.house}</span>
 						</div>
 
 						<div className={styles.contentBox}>
@@ -132,6 +150,7 @@ export function DeliveryPage() {
 								placeholder="№ квартиры/офиса"
 								onChange={handleChange}
 							></input>
+							<span style={{ color: 'red' }}>{error.flat}</span>
 							<input
 								className={styles.formInput}
 								type="text"
@@ -140,6 +159,7 @@ export function DeliveryPage() {
 								placeholder="Подъезд"
 								onChange={handleChange}
 							></input>
+							<span style={{ color: 'red' }}>{error.entrance}</span>
 							<input
 								className={styles.formInput}
 								type="text"
@@ -148,6 +168,7 @@ export function DeliveryPage() {
 								placeholder="Этаж"
 								onChange={handleChange}
 							></input>
+							<span style={{ color: 'red' }}>{error.floor}</span>
 						</div>
 						<div className={styles.contentBox} >
 							<input
@@ -310,14 +331,12 @@ export function DeliveryPage() {
 							</label>
 						</div>
 						<button
-							className={styles.executeButton}
-							type="submit"
+							className={styles.executeButton} type="submit"
 							disabled={isDisabled}
 						>
 							Оформить заказ
 						</button>
 					</div>
-				
 				</DeliveryComponent>
 			</form>
 		</section>

@@ -1,9 +1,10 @@
 import styles from "./Sale.module.css";
+import { Title } from "../../../common/Title/Title";
 
 export function Sale() {
 	return (
-		<section className={styles.sale}>
-			<h2 className={styles.title}>Акции</h2>
+		<section className={styles.container}>
+			<Title title='Акции'/>
 		</section>
 	);
 }

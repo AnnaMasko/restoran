@@ -1,9 +1,10 @@
 import styles from "./Delivery.module.css";
+import { Title } from "../../../common/Title/Title";
 
 export function Delivery () {
 	return (
-		<section className={styles.delivery}>
-			<h2 className={styles.title}>Условия доставки</h2>
+		<section className={styles.container}>
+			<Title title='Условия доставки'/>
 		</section>
 	);
 }

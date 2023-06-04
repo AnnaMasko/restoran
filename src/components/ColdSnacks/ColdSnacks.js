@@ -19,7 +19,7 @@ export const ColdSnacks = () =>{
 
     return (
         <div className={styles.container} key={categoryUrl}>
-        <h2>{title}</h2>
+        <h2 className={styles.title}>{title}</h2>
         <div className={styles.cards}>
             {
             products.map (element => <div key={element.id} className={styles.card}>
