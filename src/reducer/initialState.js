@@ -20,7 +20,11 @@ export const initialState = [
             image: {
                 src: lamb,
                 alt: 'lamb'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         },
         {
             id: 2,
@@ -33,7 +37,11 @@ export const initialState = [
             image: {
                 src: turkey,
                 alt: 'turkey'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         },
         {
             id: 3,
@@ -46,7 +54,11 @@ export const initialState = [
             image: {
                 src: goose,
                 alt: 'goose'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         },
         {
             id: 4,
@@ -59,7 +71,11 @@ export const initialState = [
             image: {
                 src: duck,
                 alt: 'duck'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         }
     ]
 },
@@ -79,7 +95,11 @@ export const initialState = [
             image: {
                 src: lamb,
                 alt: 'lamb'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         },
         {
             id: 2,
@@ -92,7 +112,11 @@ export const initialState = [
             image: {
                 src: turkey,
                 alt: 'turkey'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         },
         {
             id: 3,
@@ -105,7 +129,11 @@ export const initialState = [
             image: {
                 src: goose,
                 alt: 'goose'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         },
         {
             id: 4,
@@ -118,7 +146,11 @@ export const initialState = [
             image: {
                 src: duck,
                 alt: 'duck'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         }
     ]
 },
@@ -138,7 +170,11 @@ export const initialState = [
             image: {
                 src: lamb,
                 alt: 'lamb'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         },
         {
             id: 2,
@@ -151,7 +187,11 @@ export const initialState = [
             image: {
                 src: turkey,
                 alt: 'turkey'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         },
         {
             id: 3,
@@ -164,7 +204,11 @@ export const initialState = [
             image: {
                 src: goose,
                 alt: 'goose'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         },
         {
             id: 4,
@@ -177,7 +221,11 @@ export const initialState = [
             image: {
                 src: duck,
                 alt: 'duck'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         }
     ]
 },
@@ -197,7 +245,11 @@ export const initialState = [
             image: {
                 src: lamb,
                 alt: 'lamb'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         },
         {
             id: 2,
@@ -210,7 +262,11 @@ export const initialState = [
             image: {
                 src: turkey,
                 alt: 'turkey'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         },
         {
             id: 3,
@@ -223,7 +279,11 @@ export const initialState = [
             image: {
                 src: goose,
                 alt: 'goose'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         },
         {
             id: 4,
@@ -236,7 +296,11 @@ export const initialState = [
             image: {
                 src: duck,
                 alt: 'duck'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         }
     ]
 },
@@ -256,7 +320,11 @@ export const initialState = [
             image: {
                 src: lamb,
                 alt: 'lamb'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         },
         {
             id: 2,
@@ -269,7 +337,11 @@ export const initialState = [
             image: {
                 src: turkey,
                 alt: 'turkey'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         },
         {
             id: 3,
@@ -282,7 +354,11 @@ export const initialState = [
             image: {
                 src: goose,
                 alt: 'goose'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         },
         {
             id: 4,
@@ -295,7 +371,11 @@ export const initialState = [
             image: {
                 src: duck,
                 alt: 'duck'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         }
     ]
 },
@@ -315,7 +395,11 @@ export const initialState = [
             image: {
                 src: lamb,
                 alt: 'lamb'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         },
         {
             id: 2,
@@ -328,7 +412,11 @@ export const initialState = [
             image: {
                 src: turkey,
                 alt: 'turkey'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         },
         {
             id: 3,
@@ -341,7 +429,11 @@ export const initialState = [
             image: {
                 src: goose,
                 alt: 'goose'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         },
         {
             id: 4,
@@ -354,7 +446,11 @@ export const initialState = [
             image: {
                 src: duck,
                 alt: 'duck'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         }
     ]
 },
@@ -374,7 +470,11 @@ export const initialState = [
             image: {
                 src: lamb,
                 alt: 'lamb'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         },
         {
             id: 2,
@@ -387,7 +487,11 @@ export const initialState = [
             image: {
                 src: turkey,
                 alt: 'turkey'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         },
         {
             id: 3,
@@ -400,7 +504,11 @@ export const initialState = [
             image: {
                 src: goose,
                 alt: 'goose'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         },
         {
             id: 4,
@@ -413,7 +521,11 @@ export const initialState = [
             image: {
                 src: duck,
                 alt: 'duck'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         }
     ]
 },
@@ -433,7 +545,11 @@ export const initialState = [
             image: {
                 src: lamb,
                 alt: 'lamb'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         },
         {
             id: 2,
@@ -446,7 +562,11 @@ export const initialState = [
             image: {
                 src: turkey,
                 alt: 'turkey'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         },
         {
             id: 3,
@@ -459,7 +579,11 @@ export const initialState = [
             image: {
                 src: goose,
                 alt: 'goose'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         },
         {
             id: 4,
@@ -472,7 +596,11 @@ export const initialState = [
             image: {
                 src: duck,
                 alt: 'duck'
-            }
+            },
+            proteins: 17.23,
+            fats: 7.63,
+            carbohydrates: 22.35,
+            kilocalories: 234,
         }
     ]
 },

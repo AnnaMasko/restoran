@@ -10,18 +10,24 @@ import { About } from './components/Pages/About/About';
 import { Delivery } from './components/Pages/Delivery/Delivery';
 import { Refund } from './components/Pages/Refund/Refund';
 import { Sale } from './components/Pages/Sale/Sale';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, createContext, useReducer } from 'react';
 import { DeliveryPage } from './components/DeliveryPage/DeliveryPage';
 import { Preloader } from './common/Preloader/Preloader';
+import { Product } from './components/Product/Product';
+import productReducer from './reducer/productReducer';
+import { initialState } from './reducer/initialState';
 
 
+export const CartContext = createContext();
 
 
 const App = () => {
-  let { state } = useLocation();
+  //let { state } = useLocation();
   const [showMenu, setShowMenu] = useState(false);
   const [weather, setWeather] = useState({});
+  const [totalCount, setTotalCount] =useState(0)
   const [isPreloader, setPreloader] = useState(false)
+  const [state, dispatch] = useReducer(productReducer, initialState)
 
   useEffect(() => {
     setPreloader(true)
@@ -39,11 +45,12 @@ const App = () => {
         //console.log(dataWeather)
       })
       .finally(() => setPreloader(false))
-  }, 5000)
+  }, 2000)
     }
     , [])
 
   return (
+    <CartContext.Provider value={{totalCount, setTotalCount, state, dispatch}}>
     <div className={styles.app}>
       {isPreloader ? <Preloader /> :
         <>
@@ -59,11 +66,13 @@ const App = () => {
             <Route path='/refund' element={<Refund />} />
             <Route path='/sale' element={<Sale />} />
             <Route path='/order' element={<DeliveryPage />} />
+            <Route path='/:url/:id' element={<Product/>}/>
           </Routes>
           <Footer showMenu={showMenu} setShowMenu={setShowMenu} weather={weather} />
           </>
   }
         </div>
+        </CartContext.Provider>
     
   );
 }
