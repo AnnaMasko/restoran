@@ -4,6 +4,7 @@ import { Search } from "../Search/Search";
 import { Contact } from "../Contact/Contact";
 import { ButtonBasket } from "../ButtonBasket/ButtonBasket";
 import { Hamburger } from "../../common/Hamburger/Hamburger";
+import { Entrance } from "../Entrance/Entrance";
 
 export const Header = ({showMenu, setShowMenu}) =>{
     return (
@@ -12,6 +13,7 @@ export const Header = ({showMenu, setShowMenu}) =>{
         <Logo/>
         <Search/>
         <Contact/>
+        <Entrance/>
         <ButtonBasket/>
         </div>
     )

@@ -1,0 +1,51 @@
+@import url(../../assets/fonts/fonts.css);
+
+.container {
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.title {
+	font-family: Gilroy;
+	font-size: 24px;
+	color: #22262d;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.input_container
+{
+	width: 300px;
+}
+
+.input {
+	width: 100%;
+	padding: 16px 20px;
+	border: none;
+	border-radius: 15px;
+	font-size: 16px;
+	background-color: #e5e5e5;
+	color: #22262d;
+}
+
+.button {
+	width: 100%;
+	padding: 25px;
+	border: none;
+	border-radius: 15px;
+	display: block;
+	font-weight: 600;
+	font-size: 16px;
+	color: #fff;
+	background-color: #618967;
+	cursor: pointer;
+}
+
+.error {
+	color: red;
+}

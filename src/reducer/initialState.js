@@ -16,7 +16,7 @@ export const initialState = [
             weight: 225,
             price: 620,
             cartPrice: 620,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: lamb,
                 alt: 'lamb'
@@ -33,7 +33,7 @@ export const initialState = [
             weight: 225,
             price: 450,
             cartPrice: 450,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: turkey,
                 alt: 'turkey'
@@ -50,7 +50,7 @@ export const initialState = [
             weight: 225,
             price: 7900,
             cartPrice: 7900,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: goose,
                 alt: 'goose'
@@ -67,7 +67,7 @@ export const initialState = [
             weight: 225,
             price: 3230,
             cartPrice: 3230,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: duck,
                 alt: 'duck'
@@ -91,7 +91,7 @@ export const initialState = [
             weight: 225,
             price: 620,
             cartPrice: 620,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: lamb,
                 alt: 'lamb'
@@ -108,7 +108,7 @@ export const initialState = [
             weight: 225,
             price: 450,
             cartPrice: 450,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: turkey,
                 alt: 'turkey'
@@ -125,7 +125,7 @@ export const initialState = [
             weight: 225,
             price: 7900,
             cartPrice: 7900,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: goose,
                 alt: 'goose'
@@ -142,7 +142,7 @@ export const initialState = [
             weight: 225,
             price: 3230,
             cartPrice: 3230,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: duck,
                 alt: 'duck'
@@ -166,7 +166,7 @@ export const initialState = [
             weight: 225,
             price: 620,
             cartPrice: 620,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: lamb,
                 alt: 'lamb'
@@ -183,7 +183,7 @@ export const initialState = [
             weight: 225,
             price: 450,
             cartPrice: 450,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: turkey,
                 alt: 'turkey'
@@ -200,7 +200,7 @@ export const initialState = [
             weight: 225,
             price: 7900,
             cartPrice: 7900,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: goose,
                 alt: 'goose'
@@ -217,7 +217,7 @@ export const initialState = [
             weight: 225,
             price: 3230,
             cartPrice: 3230,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: duck,
                 alt: 'duck'
@@ -241,7 +241,7 @@ export const initialState = [
             weight: 225,
             price: 620,
             cartPrice: 620,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: lamb,
                 alt: 'lamb'
@@ -258,7 +258,7 @@ export const initialState = [
             weight: 225,
             price: 450,
             cartPrice: 450,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: turkey,
                 alt: 'turkey'
@@ -275,7 +275,7 @@ export const initialState = [
             weight: 225,
             price: 7900,
             cartPrice: 7900,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: goose,
                 alt: 'goose'
@@ -292,7 +292,7 @@ export const initialState = [
             weight: 225,
             price: 3230,
             cartPrice: 3230,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: duck,
                 alt: 'duck'
@@ -316,7 +316,7 @@ export const initialState = [
             weight: 225,
             price: 620,
             cartPrice: 620,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: lamb,
                 alt: 'lamb'
@@ -333,7 +333,7 @@ export const initialState = [
             weight: 225,
             price: 450,
             cartPrice: 450,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: turkey,
                 alt: 'turkey'
@@ -350,7 +350,7 @@ export const initialState = [
             weight: 225,
             price: 7900,
             cartPrice: 7900,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: goose,
                 alt: 'goose'
@@ -367,7 +367,7 @@ export const initialState = [
             weight: 225,
             price: 3230,
             cartPrice: 3230,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: duck,
                 alt: 'duck'
@@ -391,7 +391,7 @@ export const initialState = [
             weight: 225,
             price: 620,
             cartPrice: 620,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: lamb,
                 alt: 'lamb'
@@ -408,7 +408,7 @@ export const initialState = [
             weight: 225,
             price: 450,
             cartPrice: 450,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: turkey,
                 alt: 'turkey'
@@ -425,7 +425,7 @@ export const initialState = [
             weight: 225,
             price: 7900,
             cartPrice: 7900,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: goose,
                 alt: 'goose'
@@ -442,7 +442,7 @@ export const initialState = [
             weight: 225,
             price: 3230,
             cartPrice: 3230,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: duck,
                 alt: 'duck'
@@ -466,7 +466,7 @@ export const initialState = [
             weight: 225,
             price: 620,
             cartPrice: 620,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: lamb,
                 alt: 'lamb'
@@ -483,7 +483,7 @@ export const initialState = [
             weight: 225,
             price: 450,
             cartPrice: 450,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: turkey,
                 alt: 'turkey'
@@ -500,7 +500,7 @@ export const initialState = [
             weight: 225,
             price: 7900,
             cartPrice: 7900,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: goose,
                 alt: 'goose'
@@ -517,7 +517,7 @@ export const initialState = [
             weight: 225,
             price: 3230,
             cartPrice: 3230,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: duck,
                 alt: 'duck'
@@ -541,7 +541,7 @@ export const initialState = [
             weight: 225,
             price: 620,
             cartPrice: 620,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: lamb,
                 alt: 'lamb'
@@ -558,7 +558,7 @@ export const initialState = [
             weight: 225,
             price: 450,
             cartPrice: 450,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: turkey,
                 alt: 'turkey'
@@ -575,7 +575,7 @@ export const initialState = [
             weight: 225,
             price: 7900,
             cartPrice: 7900,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: goose,
                 alt: 'goose'
@@ -592,7 +592,7 @@ export const initialState = [
             weight: 225,
             price: 3230,
             cartPrice: 3230,
-            cartCount: 1,
+            cartCount: 0,
             image: {
                 src: duck,
                 alt: 'duck'

@@ -16,6 +16,7 @@ import { Preloader } from './common/Preloader/Preloader';
 import { Product } from './components/Product/Product';
 import productReducer from './reducer/productReducer';
 import { initialState } from './reducer/initialState';
+import { Profile } from './components/Profile/Profile';
 
 
 export const CartContext = createContext();
@@ -67,6 +68,7 @@ const App = () => {
             <Route path='/sale' element={<Sale />} />
             <Route path='/order' element={<DeliveryPage />} />
             <Route path='/:url/:id' element={<Product/>}/>
+            <Route path="/profile" element={<Profile/>}/>
           </Routes>
           <Footer showMenu={showMenu} setShowMenu={setShowMenu} weather={weather} />
           </>

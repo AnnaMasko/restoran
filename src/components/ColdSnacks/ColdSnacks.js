@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom"
 import { menu } from "../../data/menu"
 import styles from '../ColdSnacks/ColdSnacks.module.css'
-import { Order } from "./Order"
+import {BasketCounterContainer} from './BasketCounterContainer'
 import { useContext, useReducer } from "react"
 import productReducer from "../../reducer/productReducer"
 import { initialState } from "../../reducer/initialState"
@@ -35,12 +35,13 @@ export const ColdSnacks = () =>{
                 <span className={styles.cardDescription}>{element.description}</span>
                 <div className={styles.priceContainer}> 
                                 
-                <Order 
-                elementPrice={element.cartPrice}
+                <BasketCounterContainer
+                product={element}
+                //elementPrice={element.cartPrice}
                 dispatch={dispatch}
                 category={categoryUrl}
-                id = {element.id}
-                cartCount = {element.cartCount}
+                //id = {element.id}
+                //cartCount = {element.cartCount}
                 />
                 </div>
                 </div>

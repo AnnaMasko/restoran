@@ -4,7 +4,7 @@ import { useReducer } from 'react';
 import { initialState } from '../../reducer/initialState';
 import styles from './Product.module.css'
 import { useParams } from 'react-router-dom';
-import { Order } from '../ColdSnacks/Order';
+import { BasketCounterContainer } from '../ColdSnacks/BasketCounterContainer';
 import { ProductTable } from './ProductTable/ProductTable';
 import { useContext } from 'react';
 import { CartContext } from '../../App';
@@ -36,12 +36,13 @@ export const Product = () => {
                     <div className={styles.weight}>
                         Вес: {element.weight} г.
                     </div>
-                    <Order 
-                        elementPrice={element.cartPrice}
+                    <BasketCounterContainer
+                        product={element}
+                        //elementPrice={element.cartPrice}
                          dispatch={dispatch}
                         category={categoryUrl}
-                        id = {element.id}
-                        cartCount = {element.cartCount}
+                        //id = {element.id}
+                        //cartCount = {element.cartCount}
                         addStyles={styles.count}
                 />
                     <ProductTable element={element} />
